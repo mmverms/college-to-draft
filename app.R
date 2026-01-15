@@ -320,7 +320,7 @@ server <- function(input, output, session) {
       
       p <- ggplot(df, aes(x = Stat, y = Value, fill = Name)) +
         geom_bar(stat = "identity", position = "dodge") +
-        labs(y = "Value", x = "Stat", title = "Player Stat Comparison") +
+        labs(y = "Value", x = "Stat") +
         theme_minimal(base_size = 14)
       
       ggplotly(p)  # Makes the plot interactive
